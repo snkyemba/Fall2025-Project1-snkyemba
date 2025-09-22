@@ -1,22 +1,62 @@
-html {
-  font-size: 14px;
-}
-
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
-}
-
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
-}
-
-html {
-  position: relative;
-  min-height: 100%;
-}
-
+/* Page */
 body {
-  margin-bottom: 60px;
+    background-color: #013220; /* Dark green background */
+    color: white;
+    font-family: Arial, sans-serif;
+    padding: 20px;
 }
+
+/* Title spacing */
+#Title {
+    margin-top: 20px;
+}
+
+/* Poster */
+#CoverArt {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 50%; /* Circular */
+    display: block;
+    margin: 20px auto;
+}
+
+/* IMDb rating badge */
+#Rating {
+    display: inline-block;
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+/* Trailer responsiveness */
+#Trailer {
+    max-width: 100%;
+}
+
+/* Summary */
+#Summary {
+    margin: 20px auto;
+    max-width: 700px;
+    line-height: 1.6;
+}
+
+/* Actors list */
+#Actors {
+    list-style: none;
+    padding: 0;
+    margin: 20px auto;
+    display: inline-block;
+    text-align: center;
+}
+
+    #Actors li {
+        color: white;
+        font-size: 18px;
+        margin: 5px 0;
+        cursor: pointer;
+        transition: color 0.3s ease;
+    }
+
+        #Actors li:hover {
+            color: yellow; /* highlight on hover */
+        }
