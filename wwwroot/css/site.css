@@ -1,62 +1,29 @@
-/* Page */
 body {
-    background-color: #013220; /* Dark green background */
+    background-color: #013220; /* Dark green */
     color: white;
-    font-family: Arial, sans-serif;
-    padding: 20px;
-}
-
-/* Title spacing */
-#Title {
-    margin-top: 20px;
-}
-
-/* Poster */
-#CoverArt {
-    width: 220px;
-    height: 220px;
-    object-fit: cover;
-    border-radius: 50%; /* Circular */
-    display: block;
-    margin: 20px auto;
-}
-
-/* IMDb rating badge */
-#Rating {
-    display: inline-block;
-    margin: 10px 0;
-    font-size: 1.2rem;
-}
-
-/* Trailer responsiveness */
-#Trailer {
-    max-width: 100%;
-}
-
-/* Summary */
-#Summary {
-    margin: 20px auto;
-    max-width: 700px;
-    line-height: 1.6;
-}
-
-/* Actors list */
-#Actors {
-    list-style: none;
-    padding: 0;
-    margin: 20px auto;
-    display: inline-block;
     text-align: center;
+    font-family: Arial, sans-serif;
 }
 
-    #Actors li {
-        color: white;
-        font-size: 18px;
-        margin: 5px 0;
-        cursor: pointer;
-        transition: color 0.3s ease;
+#CoverArt {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+#Actors li {
+    cursor: pointer;
+    margin: 5px 0; /* vertical spacing */
+    text-align: center;
+    list-style-type: none; /* remove bullets */
+}
+
+    #Actors li:hover {
+        color: #FFD700; /* gold on hover */
+        text-decoration: underline;
     }
 
-        #Actors li:hover {
-            color: yellow; /* highlight on hover */
-        }
+#Summary {
+    text-align: center; /* ensures text inside card is centered */
+}
